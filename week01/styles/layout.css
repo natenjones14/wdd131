@@ -20,7 +20,7 @@ body {
     padding: 2rem;
 }
 
-.navbar {
+nav {
     display: flex;
     background-color: #000000;
 }
