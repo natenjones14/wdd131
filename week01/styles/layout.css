@@ -11,9 +11,9 @@ body {
 }
 
 .header {
-    background-color: #333; /* Dark gray background */
-    color: #fff; /* White text */
-    padding: 20px; /* Add padding */
+    background-color: #333;
+    color: #fff;
+    padding: 2rem; 
 }    
 
 .navbar {
