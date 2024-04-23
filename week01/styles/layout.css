@@ -4,17 +4,21 @@ body {
 }
 
 .footer {
-    background-color: #333; /* Dark gray background */
-    color: #fff; /* White text */
-    text-align: center; /* Center align text */
-    padding: 20px; /* Add padding */
+    background-color: #333;
+    /* Dark gray background */
+    color: #fff;
+    /* White text */
+    text-align: center;
+    /* Center align text */
+    padding: 20px;
+    /* Add padding */
 }
 
 .header {
     background-color: #333;
     color: #fff;
-    padding: 2rem; 
-}    
+    padding: 2rem;
+}
 
 .navbar {
     display: flex;
@@ -26,9 +30,7 @@ body {
     color: #ffffff;
     padding: 10px;
     flex-grow: 1;
-    /* Make the buttons stretch and fill the available space */
     text-align: center;
-    /* Center align the text within buttons */
 }
 
 .navbar a:hover {
@@ -49,7 +51,6 @@ main {
     background-color: #c1c1c1;
     padding: 4rem;
     flex: 1;
-    /* Grow equally to fill the available space */
 }
 
 .another {
