@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer {
+    background-color: #333;
+    /* Dark gray background */
+    color: #fff;
+    /* White text */
+    text-align: center;
+    /* Center align text */
+    padding: 20px;
+    /* Add padding */
+}
+
+.header {
+    background-color: #174e70;
+    color: #fff;
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    background-color: #333333;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+}
+
+.about-me {
+    background-color: #174e70;
+    color: #fff;
+    display: flex;
+}
+
+div {
+    display: flex;
+}
+
+article {
+    display: flex;
+}
+
+main {
+    background-color: #c1c1c1;
+    padding: 4rem;
+}
+
+.another {
+    background-color: #f0f0f0;
+    padding: 4rem;
+    flex: 1;
+    text-align: left;
+    vertical-align: text-top;
+}
