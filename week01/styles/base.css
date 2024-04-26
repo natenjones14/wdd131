@@ -15,14 +15,14 @@ body {
 }
 
 .header {
-    background-color: #333;
+    background-color: #174e70;
     color: #fff;
     padding: 2rem;
 }
 
 nav {
     display: flex;
-    background-color: #000000;
+    background-color: #333333;
 }
 
 .navbar a {
@@ -47,10 +47,23 @@ nav {
     display: flex;
 }
 
+.about-me {
+    background-color: #174e70;
+    color: #fff;
+    display: flex;
+}
+
+div {
+    display: flex;
+}
+
+article {
+    display: flex;
+}
+
 main {
     background-color: #c1c1c1;
     padding: 4rem;
-    flex: 1;
 }
 
 .another {
