@@ -1,7 +1,8 @@
-fetch('last_update.php')
-    .then(response => response.text())
-    .then(lastUpdateDate => {
-        // Display the last update date and time on the webpage
-        document.getElementById('lastUpdate').innerText = 'Last updated on: ' + lastUpdateDate;
-    })
-    .catch(error => console.error('Error fetching last update:', error));
+var lastUpdateTimestamp = 1645378927000;
+
+function formatDate(timestamp) {
+  var date = new Date(timestamp);
+  return date.toLocaleString();
+}
+
+document.getElementById('updateTime').innerText = formatDate(lastUpdateTimestamp);
