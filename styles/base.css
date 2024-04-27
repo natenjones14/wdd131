@@ -45,6 +45,11 @@ nav {
     color: #fff;
 }
 
+.nm {
+    width: 25%;
+    height: 25%;
+}
+
 div {
     display: flex;
 }
@@ -52,6 +57,10 @@ div {
 article {
     display: flex;
     
+}
+
+h2 {
+    text-align: center;
 }
 
 main {
