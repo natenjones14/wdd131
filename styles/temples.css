@@ -34,7 +34,7 @@ h1 {
 nav {
     background-color: tomato;
     display: flex;
-	flex-direction: column
+    flex-direction: column
 }
 
 .navigation {
