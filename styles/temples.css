@@ -8,6 +8,18 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+header {
+    display: flex;
+    background-color: tomato;
+}
+
+h1 {
+    
+
+}
+
+
+
 #menu {
     display: block;
     font-size: 2rem;
