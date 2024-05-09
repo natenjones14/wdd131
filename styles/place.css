@@ -5,12 +5,13 @@
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 /* mobile **************************/
 header {
-    background-color: tomato;
+    background-color: #ffb7c5;
+    color: #a50000;
 }
 
 h1 {
@@ -75,7 +76,7 @@ nav {
 
 
 main {
-    padding: 3rem;
+    padding: 2rem;
 }
 
 h2 {
@@ -83,14 +84,10 @@ h2 {
     padding: 1rem;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-    grid-gap: 20px;
-}
 
-figure {
-    margin: 0;
+
+div {
+    text-align: center;
 }
 
 img {
@@ -98,12 +95,10 @@ img {
     height: auto;
 }
 
-figcaption {
-    text-align: center;
-}
 
 footer {
-    background-color: tomato;
+    background-color: #ffb7c5;
+    color: #a50000;
     text-align: center;
     padding: 1rem;
 }

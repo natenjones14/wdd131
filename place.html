@@ -6,20 +6,51 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="Kyoto Page">
     <meta name="author" content="Nate Jones">
-    <title>Kyoto</title>
+    <title>Kyoto, Japan webpage | WDD 131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <h1>Japan | 日本</h1>
+    </header>
 
+    <main>
+        <picture>
+            <source srcset="images/kyoto-large.webp" media="(min-width: 600px)">
+            <img src="images/kyoto-mobile.webp" alt="Kyoto Image">
+            <!-- Fallback for browsers that don't support <picture> or <source> elements -->
+            <noscript>
+                <img src="images/kyoto-mobile.webp" width="400" alt="Kyoto Image">
+            </noscript>
+        </picture>
+        <h2>Data</h2>
+        <div>
+            <p>Area: 377,975 sq km</p>
+            <p>Population: 123,970,000</p>
+            <p>Capital: Tokyo</p>
+            <p>Language: Japanese</p>
+            <p>Currency: Japanese Yen (¥)</p>
+            <p>Time Zone: UTC+9:00 (JST)</p>
+            <p>Calling Code: +81</p>
+            <p>Internet TLD: .jp</p>
+        </div>
+        <h2>Weather</h2>
+        <div>
 
+        </div>
+    </main>
 
     <footer>
         <p>&copy; 2024 Nathaniel Jones USA</p>
+        <p>Japan</p>
         <p id="lastUpdate">Last updated on: <span id="updateTime"></span></p>
-        <script src="scripts/getdates.js" defer></script>
     </footer>
 </body>
 
