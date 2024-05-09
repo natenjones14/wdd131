@@ -85,6 +85,22 @@ h2 {
 }
 
 
+.data-span {
+    text-align: center;
+
+
+}
+
+.data-span span {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+}
+
+.data-span span:first-of-type {
+    text-align: right
+}
+
 
 div {
     text-align: center;
