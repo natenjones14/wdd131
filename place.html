@@ -28,10 +28,6 @@
             <picture>
                 <source srcset="images/kyoto-large.webp" media="(min-width: 700px)">
                 <img src="images/kyoto-mobile.webp" alt="Kyoto Image">
-                <!-- Fallback for browsers that don't support <picture> or <source> elements -->
-                <noscript>
-                    <img src="images/kyoto-mobile.webp" width="400" alt="Kyoto Image">
-                </noscript>
             </picture>
             <section class="overlay">
                 <div class="data-span">
@@ -49,13 +45,13 @@
 
             <section class="overlay-2">
                 <h2>Weather</h2>
-                <img src="images/weather_icon.svg" class="weather-icon">
-                <section id="weather">
+                <img src="images/weather_icon.svg" alt="weather icon" class="weather-icon">
+                <div id="weather">
                     <p>Temperature: <span id="temperature">10 °C</span></p>
                     <p>Wind Speed: <span id="windSpeed">5 km/h</span></p>
                     <p>Windchill Factor: <span id="windchillFactor"></span></p>
-                </section>
-                
+                </div>
+
             </section>
         </div>
     </main>
