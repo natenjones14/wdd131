@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 
-body {
+:root {
     font-family: "Raleway", sans-serif;
+    color: #a50000;
+
 }
 
 /* mobile **************************/
