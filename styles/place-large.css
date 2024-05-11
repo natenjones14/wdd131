@@ -1,26 +1,45 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
     header {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    .navigation {
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: row;
-    }
-
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-    }
-
-    .navigation a {
-        text-align: center;
-    }
-
     #menu {
         display: none;
+    }
+
+    h2 {
+        background-color: green;
+        padding: .5rem;
+    }
+
+    div {
+        background-color: rgba(255, 255, 255, .6);
+        
+    }
+    .container {
+        position: relative; /* Set container as relative positioning */
+        display: inline-block; /* Ensure container wraps around image */
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 70px;
+        left: 40px;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 5px;
+    }
+
+    .overlay-2 {
+        position: absolute;
+        bottom: 50px;
+        right: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 5px;
+    }
+
+    .weather-icon {
+        width: 100px;
     }
 }

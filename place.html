@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/jquery.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -23,28 +24,39 @@
     </header>
 
     <main>
-        <picture>
-            <source srcset="images/kyoto-large.webp" media="(min-width: 600px)">
-            <img src="images/kyoto-mobile.webp" alt="Kyoto Image">
-            <!-- Fallback for browsers that don't support <picture> or <source> elements -->
-            <noscript>
-                <img src="images/kyoto-mobile.webp" width="400" alt="Kyoto Image">
-            </noscript>
-        </picture>
-        <h2>Data</h2>
-        <div class="data-span">
-            <p><span>Area:</span> <span>377,975 sq km</span></p>
-            <p><span>Population:</span> <span>123,970,000</span></p>
-            <p><span>Capital:</span> <span>Tokyo</span></p>
-            <p><span>Language:</span> <span>Japanese</span></p>
-            <p><span>Currency:</span> <span>Japanese Yen (¥)</span></p>
-            <p><span>Time Zone:</span> <span>UTC+9:00 (JST)</span></p>
-            <p><span>Calling Code:</span> <span>+81</span></p>
-            <p><span>Internet TLD:</span> <span>.jp</span></p>
-        </div>
-        <h2>Weather</h2>
-        <div>
+        <div class="container">
+            <picture>
+                <source srcset="images/kyoto-large.webp" media="(min-width: 700px)">
+                <img src="images/kyoto-mobile.webp" alt="Kyoto Image">
+                <!-- Fallback for browsers that don't support <picture> or <source> elements -->
+                <noscript>
+                    <img src="images/kyoto-mobile.webp" width="400" alt="Kyoto Image">
+                </noscript>
+            </picture>
+            <section class="overlay">
+                <div class="data-span">
+                    <h2>Data</h2>
+                    <p>Area: 377,975 sq km</p>
+                    <p>Population: 123,970,000</p>
+                    <p>Capital: Tokyo</p>
+                    <p>Language: Japanese</p>
+                    <p>Currency: Japanese Yen (¥)</p>
+                    <p>Time Zone: UTC+9:00 (JST)</p>
+                    <p>Calling Code: +81</p>
+                    <p>Internet TLD: .jp</p>
+                </div>
+            </section>
 
+            <section class="overlay-2">
+                <h2>Weather</h2>
+                <img src="images/weather_icon.svg" class="weather-icon">
+                <section id="weather">
+                    <p>Temperature: <span id="temperature">10 °C</span></p>
+                    <p>Wind Speed: <span id="windSpeed">5 km/h</span></p>
+                    <p>Windchill Factor: <span id="windchillFactor"></span></p>
+                </section>
+                
+            </section>
         </div>
     </main>
 

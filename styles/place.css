@@ -38,12 +38,6 @@ nav {
     flex-direction: column
 }
 
-.navigation {
-    list-style: none;
-    margin: 0 auto;
-    max-width: 760px;
-}
-
 .navigation li {
     display: none;
 }
@@ -73,8 +67,6 @@ nav {
     content: "X";
 }
 
-
-
 main {
     padding: 2rem;
 }
@@ -87,20 +79,7 @@ h2 {
 
 .data-span {
     text-align: center;
-
-
 }
-
-.data-span span {
-    display: inline-block;
-    width: 200px;
-    text-align: left;
-}
-
-.data-span span:first-of-type {
-    text-align: right
-}
-
 
 div {
     text-align: center;
@@ -117,4 +96,8 @@ footer {
     color: #a50000;
     text-align: center;
     padding: 1rem;
+}
+
+.weather-icon {
+    width: 150px;
 }
