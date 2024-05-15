@@ -83,10 +83,11 @@ h2 {
     padding: 1rem;
 }
 
-.grid-container {
+.res-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 30px;
+    text-align: center;
 }
 
 figure {
@@ -98,9 +99,7 @@ img {
     height: auto;
 }
 
-figcaption {
-    text-align: center;
-}
+
 
 footer {
     background-color: tomato;

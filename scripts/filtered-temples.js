@@ -45,7 +45,7 @@ const temples = [
         dedicated: "1974, November, 19",
         area: 156558,
         imageUrl:
-            "https://www.churchofjesuschrist.org/imgs/689bbc7521d05a77c72a4d8e8a7e70ea8a375f07/full/320%2C/0/default"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
     },
     {
         templeName: "Lima Perú",
@@ -81,10 +81,26 @@ const temples = [
     }
 ];
 
-createTempleCard();
+const oldTemples = temples.filter(temple => {
+    const dedicationYear = parseInt(temple.dedicated.split(", ")[0]);
+    return dedicationYear < 1900;
+});
 
-function createTempleCard() {
-    temples.forEach(temple => {
+const newTemples = temples.filter(temple => {
+    const dedicationYear = parseInt(temple.dedicated.split(", ")[0]);
+    return dedicationYear > 2000;
+});
+
+const largeTemples = temples.filter(temple => temple.area > 90000);
+
+const smallTemples = temples.filter(temple => temple.area < 10000);
+
+const homeTemples = temples;
+
+createTempleCard(temples);
+
+function createTempleCard(filteredTemples) {
+    filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
