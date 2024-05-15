@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* mobile **************************/
+header {
+    background-color: tomato;
+}
+
+h1 {
+    padding: 1rem;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: tomato;
+    display: flex;
+    flex-direction: column
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+
+
+main {
+    padding: 3rem;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    grid-gap: 20px;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    background-color: tomato;
+    text-align: center;
+    padding: 1rem;
+}
