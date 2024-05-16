@@ -14,7 +14,7 @@ header {
 }
 
 h1 {
-    padding: 1rem;
+    padding: .5rem;
 }
 
 #menu {
@@ -75,7 +75,7 @@ nav {
 
 
 main {
-    padding: 3rem;
+    padding: 2rem;
 }
 
 h2 {
@@ -92,8 +92,8 @@ h2 {
 
 figure {
     margin: 0;
-    border:#000;
-    border-width: thin;
+    border:2px solid #000;
+    background-color: rgba(255, 99, 71, 0.427);
 }
 
 img {

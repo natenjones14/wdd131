@@ -17,7 +17,7 @@ const temples = [
     },
     {
         templeName: "Manti Utah",
-        location: "Manti, Utah, United States",
+        location: "Manti, Utah",
         dedicated: "1888, May, 21",
         area: 74792,
         imageUrl:
@@ -25,7 +25,7 @@ const temples = [
     },
     {
         templeName: "Payson Utah",
-        location: "Payson, Utah, United States",
+        location: "Payson, Utah",
         dedicated: "2015, June, 7",
         area: 96630,
         imageUrl:
@@ -41,7 +41,7 @@ const temples = [
     },
     {
         templeName: "Washington D.C.",
-        location: "Kensington, Maryland, United States",
+        location: "Kensington, Maryland",
         dedicated: "1974, November, 19",
         area: 156558,
         imageUrl:
@@ -69,7 +69,7 @@ const temples = [
         dedicated: "2008, February, 10",
         area: 57504,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rexburg-idaho/1200x1920/rexburg-temple-lds-846154-wallpaper.jpg"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rexburg-idaho/400x250/rexburg-temple-776441-wallpaper.jpg"
     },
     {
         templeName: "San Diego California",
@@ -77,7 +77,16 @@ const temples = [
         dedicated: "1993, April, 30",
         area: 72000,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/800x500/san-diego-temple-765109-wallpaper.jpg"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/400x250/san-diego-temple-765109-wallpaper.jpg"
+    },
+    {
+        templeName: "Salt Lake Temple",
+        location: "Salt Lake City, Utah",
+        dedicated: "1893, April, 24",
+        area: 382207,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/400x250/slctemple5.jpg"
+
     }
 ];
 
@@ -92,7 +101,7 @@ oldTemples.addEventListener("click", () => {
 });
 
 const newTemples = document.querySelector("#new");
-newTemples.addEventListener("click", () =>{
+newTemples.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => {
         const dedicationYear = parseInt(temple.dedicated.split(", ")[0]);
         return dedicationYear > 1900;
