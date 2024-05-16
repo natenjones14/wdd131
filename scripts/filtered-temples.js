@@ -81,25 +81,41 @@ const temples = [
     }
 ];
 
-const oldTemples = temples.filter(temple => {
-    const dedicationYear = parseInt(temple.dedicated.split(", ")[0]);
-    return dedicationYear < 1900;
-});
-
-const newTemples = temples.filter(temple => {
-    const dedicationYear = parseInt(temple.dedicated.split(", ")[0]);
-    return dedicationYear > 2000;
-});
-
-const largeTemples = temples.filter(temple => temple.area > 90000);
-
-const smallTemples = temples.filter(temple => temple.area < 10000);
-
-const homeTemples = temples;
-
 createTempleCard(temples);
 
+const oldTemples = document.querySelector("#old");
+oldTemples.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => {
+        const dedicationYear = parseInt(temple.dedicated.split(", ")[0]);
+        return dedicationYear < 1900;
+    }));
+});
+
+const newTemples = document.querySelector("#new");
+newTemples.addEventListener("click", () =>{
+    createTempleCard(temples.filter(temple => {
+        const dedicationYear = parseInt(temple.dedicated.split(", ")[0]);
+        return dedicationYear > 1900;
+    }));
+});
+
+const largeTemples = document.querySelector("#large");
+largeTemples.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area > 90000));
+});
+
+const smallTemples = document.querySelector("#small");
+smallTemples.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area < 10000));
+});
+
+const homeTemples = document.querySelector("#home");
+homeTemples.addEventListener("click", () => {
+    createTempleCard(temples);
+});
+
 function createTempleCard(filteredTemples) {
+    document.querySelector(".res-grid").innerHTML = "";
     filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
