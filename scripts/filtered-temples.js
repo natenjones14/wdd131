@@ -117,14 +117,14 @@ homeTemples.addEventListener("click", () => {
 function createTempleCard(filteredTemples) {
     document.querySelector(".res-grid").innerHTML = "";
     filteredTemples.forEach(temple => {
-        let card = document.createElement("section");
+        let card = document.createElement("figure");
         let name = document.createElement("h3");
         let location = document.createElement("p");
         let dedication = document.createElement("p");
         let area = document.createElement("p");
         let img = document.createElement("img");
 
-        name.textContent = temple.templename;
+        name.textContent = temple.templeName;
         location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
         dedication.innerHTML = `<span class="label">Dedication:</span> ${temple.dedicated}`;
         area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
