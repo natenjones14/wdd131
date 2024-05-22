@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+  <form action="review.html" method="get">
+    <div>
+      <label for="product">Product Name:</label>
+      <select id="product" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
+    </div>
+    <div>
+      <label>Overall Rating:</label>
+      <div>
+        <input type="radio" id="star1" name="rating" value="1" required>
+        <label for="star1">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">&#9733;&#9733;&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">&#9733;&#9733;&#9733;&#9733;</label>
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+      </div>
+    </div>
+    <div>
+      <label for="installation-date">Date of Installation:</label>
+      <input type="date" id="installation-date" name="installation-date" required>
+    </div>
+    <div>
+      <label>Useful Features:</label>
+      <div>
+        <input type="checkbox" id="feature1" name="features" value="Feature 1">
+        <label for="feature1">Feature 1</label>
+        <input type="checkbox" id="feature2" name="features" value="Feature 2">
+        <label for="feature2">Feature 2</label>
+        <input type="checkbox" id="feature3" name="features" value="Feature 3">
+        <label for="feature3">Feature 3</label>
+        <!-- Add more checkboxes as needed -->
+      </div>
+    </div>
+    <div>
+      <label for="review">Written Review:</label>
+      <textarea id="review" name="review"></textarea>
+    </div>
+    <div>
+      <label for="username">User Name:</label>
+      <input type="text" id="username" name="username">
+    </div>
+    <div>
+      <input type="submit" value="Submit Review">
+    </div>
+  </form>
+  <footer>
+    <!-- Common footer content here -->
+  </footer>
+  <script src="scripts/form.js"></script>
+</body>
+</html>
