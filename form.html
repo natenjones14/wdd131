@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,46 +11,47 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/form.js" defer></script>
 </head>
+
 <body>
     <h1>Product Reviw</h1>
     <form action="review.html" method="get">
         <div>
-        <label for="product">Product Name:</label>
-        <select id="product" name="product" required>
-            <option value="" disabled selected>Select a Product ...</option>
-        </select>
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
         </div>
         <div>
-        <label>Overall Rating:</label>
-        <div>
-            <input type="radio" id="star1" name="rating" value="1" required>
-            <label for="star1">&#9733;</label>
-            <input type="radio" id="star2" name="rating" value="2">
-            <label for="star2">&#9733;&#9733;</label>
-            <input type="radio" id="star3" name="rating" value="3">
-            <label for="star3">&#9733;&#9733;&#9733;</label>
-            <input type="radio" id="star4" name="rating" value="4">
-            <label for="star4">&#9733;&#9733;&#9733;&#9733;</label>
-            <input type="radio" id="star5" name="rating" value="5">
-            <label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
-        </div>
-        </div>
-        <div>
-        <label for="installation-date">Date of Installation:</label>
-        <input type="date" id="installation-date" name="installation-date" required>
+            <label>Overall Rating:</label>
+            <div>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">&#9733;&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">&#9733;&#9733;&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">&#9733;&#9733;&#9733;&#9733;</label>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+            </div>
         </div>
         <div>
-        <label>Useful Features:</label>
-        <div>
-            <input type="checkbox" id="feature1" name="features" value="Durability">
-            <label for="feature1">Durability</label>
-            <input type="checkbox" id="feature2" name="features" value="Ease of Use">
-            <label for="feature2">Ease of Use</label>
-            <input type="checkbox" id="feature3" name="features" value="Performance">
-            <label for="feature3">Performance</label>
-            <input type="checkbox" id="feature4" name="features" value="Design">
-            <label for="feature3">Design</label>
+            <label for="installation-date">Date of Installation:</label>
+            <input type="date" id="installation-date" name="installation-date" required>
         </div>
+        <div>
+            <label>Useful Features:</label>
+            <div>
+                <input type="checkbox" id="feature1" name="features" value="Durability">
+                <label for="feature1">Durability</label>
+                <input type="checkbox" id="feature2" name="features" value="Ease of Use">
+                <label for="feature2">Ease of Use</label>
+                <input type="checkbox" id="feature3" name="features" value="Performance">
+                <label for="feature3">Performance</label>
+                <input type="checkbox" id="feature4" name="features" value="Design">
+                <label for="feature3">Design</label>
+            </div>
         </div>
         <div>
             <label for="review">Written Review:</label>
@@ -68,4 +70,5 @@
         <p id="lastUpdate">Last updated on: <span id="updateTime"></span></p>
     </footer>
 </body>
+
 </html>
