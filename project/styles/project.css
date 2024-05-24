@@ -1,0 +1,25 @@
+* {
+    background-color: #d7ff69;
+}
+
+h1,
+h2 {
+    font-family: "Almendra", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+main {
+    padding: 1rem;
+    margin: 1rem;
+    border: 5px solid #8a6e00da;
+    max-width: 580px;
+    /*border: 5px solid #d8b731da;*/
+}
+
+img {
+    max-width: 550px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
