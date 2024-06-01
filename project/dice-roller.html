@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=MedievalSharp&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/dice-roller.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <h1>Simple Dice-Roller</h1>
+    <main>
+        <article>
+            <div id="controls">
+                <button class="add-dice" data-type="4">Add d4</button>
+                <button class="add-dice" data-type="6">Add d6</button>
+                <button class="add-dice" data-type="8">Add d8</button>
+                <button class="add-dice" data-type="10">Add d10</button>
+                <button class="add-dice" data-type="12">Add d12</button>
+                <button class="add-dice" data-type="20">Add d20</button>
+                <button id="remove-dice">Remove Last Dice</button>
+
+            </div>
+            <div id="dice-container">
+                <!-- Dice will be added here -->
+            </div>
+        </article>
+        <article>
+            <div id="roll-container">
+                <button class="rolls" id="roll-dice">Roll</button>
+                <button class="rolls" id="clear-dice">Clear</button>
+            </div>
+        </article>
+        <article>
+            <div id="sum-container">
+                <button id="sum-dice">Sum</button>
+                <span id="sum-result">Total: 0</span>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nathaniel Jones USA</p>
+        <p id="lastUpdate">Last updated on: <span id="updateTime"></span></p>
+    </footer>
+</body>
+
+</html>
