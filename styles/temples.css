@@ -17,20 +17,6 @@ h1 {
     padding: 1rem;
 }
 
-#menu {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    text-decoration: none;
-    padding: 1rem;
-    background-color: #eee;
-    color: #000;
-}
-
-#menu::before {
-    content: "≡";
-}
-
 nav {
     background-color: tomato;
     display: flex;
@@ -66,10 +52,6 @@ nav {
 
 .show li {
     display: block;
-}
-
-#menu.show::before {
-    content: "X";
 }
 
 
